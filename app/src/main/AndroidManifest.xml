@@ -14,10 +14,13 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--bugfix android12(SDK31) or SDK 34 need it-->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!--bugfix end-->   
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+       
     <!-- This is a test application that should always be debuggable. -->
     <application android:label="@string/app_name"
                  android:icon="@drawable/ic_launcher"
